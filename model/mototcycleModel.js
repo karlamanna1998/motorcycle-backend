@@ -13,6 +13,11 @@ const mototcycleScheema = new mongoose.Schema({
         type: String,
         required: true
     },
+    status: {
+        type: String,
+        enum: ['active', 'inactive'],
+        default: 'inactive'
+    },
     // images_url : {
     //     type: Array,
     //     default: []
